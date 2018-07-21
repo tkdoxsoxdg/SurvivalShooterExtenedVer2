@@ -113,9 +113,9 @@ MonoBehaviour:
     m_Settings:
       tonemapping:
         tonemapper: 2
-        neutralBlackIn: 0.0506
-        neutralWhiteIn: 14.01
-        neutralBlackOut: 0.0519
+        neutralBlackIn: -0.0142
+        neutralWhiteIn: 20
+        neutralBlackOut: -0.0111
         neutralWhiteOut: 1.89
         neutralWhiteLevel: 4.48
         neutralWhiteClip: 9.14
@@ -139,8 +139,8 @@ MonoBehaviour:
           offset: {r: 1, g: 1, b: 1, a: 0}
         linear:
           lift: {r: 0.9790069, g: 0.9259289, b: 1, a: 0}
-          gamma: {r: 0.40482378, g: 0, b: 1, a: 0}
-          gain: {r: 0.65494037, g: 1, b: 0.27806723, a: 0}
+          gamma: {r: 0.40482378, g: 0, b: 1, a: -9.2528807e-10}
+          gain: {r: 0.65494037, g: 1, b: 0.27806723, a: -0.44924405}
       curves:
         master:
           curve:
