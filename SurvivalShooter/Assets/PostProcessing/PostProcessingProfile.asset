@@ -25,11 +25,11 @@ MonoBehaviour:
         motionVectorsResolution: 24
         motionVectorsAmplitude: 64
   fog:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       excludeSkybox: 1
   antialiasing:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       method: 0
       fxaaSettings:
@@ -40,9 +40,9 @@ MonoBehaviour:
         stationaryBlending: 0.95
         motionBlending: 0.85
   ambientOcclusion:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
-      intensity: 2.83
+      intensity: 2.44
       radius: 0.3
       sampleCount: 16
       downsampling: 1
@@ -50,16 +50,16 @@ MonoBehaviour:
       ambientOnly: 1
       highPrecision: 1
   screenSpaceReflection:
-    m_Enabled: 0
+    m_Enabled: 1
     m_Settings:
       reflection:
         blendType: 0
-        reflectionQuality: 0
+        reflectionQuality: 2
         maxDistance: 104
-        iterationCount: 189
-        stepSize: 7
-        widthModifier: 0.83
-        reflectionBlur: 1
+        iterationCount: 60
+        stepSize: 2
+        widthModifier: 1.49
+        reflectionBlur: 1.2
         reflectBackfaces: 0
       intensity:
         reflectionMultiplier: 0.8
@@ -69,42 +69,42 @@ MonoBehaviour:
       screenEdgeMask:
         intensity: 0.03
   depthOfField:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
-      focusDistance: 18.65
-      aperture: 20.9
-      focalLength: 67
+      focusDistance: 1.3
+      aperture: 11.6
+      focalLength: 30
       useCameraFov: 0
-      kernelSize: 3
+      kernelSize: 1
   motionBlur:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
-      shutterAngle: 110
-      sampleCount: 22
+      shutterAngle: 360
+      sampleCount: 6
       frameBlending: 0.404
   eyeAdaptation:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
-      lowPercent: 52.22594
-      highPercent: 66.3282
-      minLuminance: -5.53
-      maxLuminance: 1.37
+      lowPercent: 17.64162
+      highPercent: 41.055042
+      minLuminance: 41.07
+      maxLuminance: -7.7
       keyValue: 0.49
       dynamicKeyValue: 1
-      adaptationType: 0
+      adaptationType: 1
       speedUp: 1.76
       speedDown: 1
-      logMin: -7
-      logMax: 3
+      logMin: -6
+      logMax: 6
   bloom:
     m_Enabled: 1
     m_Settings:
       bloom:
-        intensity: 1.26
-        threshold: 1.16
-        softKnee: 1
-        radius: 1.89
-        antiFlicker: 0
+        intensity: 0.41
+        threshold: 2.78
+        softKnee: 0.524
+        radius: 1
+        antiFlicker: 1
       lensDirt:
         texture: {fileID: 0}
         intensity: 3
@@ -112,35 +112,35 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       tonemapping:
-        tonemapper: 1
-        neutralBlackIn: 0.02
-        neutralWhiteIn: 10
-        neutralBlackOut: 0
-        neutralWhiteOut: 10
-        neutralWhiteLevel: 5.3
-        neutralWhiteClip: 10
+        tonemapper: 2
+        neutralBlackIn: 0.0506
+        neutralWhiteIn: 14.01
+        neutralBlackOut: 0.0519
+        neutralWhiteOut: 1.89
+        neutralWhiteLevel: 4.48
+        neutralWhiteClip: 9.14
       basic:
-        postExposure: 0
-        temperature: -17.4
-        tint: 13.2
-        hueShift: 1
-        saturation: 1.058
-        contrast: 0.744
+        postExposure: 0.9
+        temperature: -25.8
+        tint: 32.3
+        hueShift: -8
+        saturation: 0.861
+        contrast: 0.743
       channelMixer:
         red: {x: 1, y: 0, z: 0}
         green: {x: 0, y: 1, z: 0}
-        blue: {x: 0.27, y: 0.91, z: 0.77}
+        blue: {x: 0.27, y: 1.07, z: -0.32}
         currentEditingChannel: 2
       colorWheels:
-        mode: 1
+        mode: 0
         log:
           slope: {r: 1, g: 1, b: 1, a: 0}
           power: {r: 1, g: 1, b: 1, a: 0}
           offset: {r: 1, g: 1, b: 1, a: 0}
         linear:
-          lift: {r: 0.98244387, g: 0.9946057, b: 1, a: 0}
-          gamma: {r: 1, g: 1, b: 1, a: 0}
-          gain: {r: 1, g: 1, b: 1, a: 0}
+          lift: {r: 0.9790069, g: 0.9259289, b: 1, a: 0}
+          gamma: {r: 0.40482378, g: 0, b: 1, a: 0}
+          gain: {r: 0.65494037, g: 1, b: 0.27806723, a: 0}
       curves:
         master:
           curve:
@@ -149,14 +149,14 @@ MonoBehaviour:
             - serializedVersion: 2
               time: 0
               value: 0
-              inSlope: 1
+              inSlope: 0
               outSlope: 1
               tangentMode: 0
             - serializedVersion: 2
               time: 1
               value: 1
               inSlope: 1
-              outSlope: 1
+              outSlope: 0
               tangentMode: 0
             m_PreInfinity: 2
             m_PostInfinity: 2
@@ -171,18 +171,18 @@ MonoBehaviour:
             - serializedVersion: 2
               time: 0
               value: 0
-              inSlope: 1
+              inSlope: 0
               outSlope: 1
               tangentMode: 0
             - serializedVersion: 2
               time: 1
               value: 1
               inSlope: 1
-              outSlope: 1
+              outSlope: 0
               tangentMode: 0
             m_PreInfinity: 2
             m_PostInfinity: 2
-            m_RotationOrder: 4
+            m_RotationOrder: 0
           m_Loop: 0
           m_ZeroValue: 0
           m_Range: 1
@@ -193,18 +193,18 @@ MonoBehaviour:
             - serializedVersion: 2
               time: 0
               value: 0
-              inSlope: 1
+              inSlope: 0
               outSlope: 1
               tangentMode: 0
             - serializedVersion: 2
               time: 1
               value: 1
               inSlope: 1
-              outSlope: 1
+              outSlope: 0
               tangentMode: 0
             m_PreInfinity: 2
             m_PostInfinity: 2
-            m_RotationOrder: 4
+            m_RotationOrder: 0
           m_Loop: 0
           m_ZeroValue: 0
           m_Range: 1
@@ -215,18 +215,18 @@ MonoBehaviour:
             - serializedVersion: 2
               time: 0
               value: 0
-              inSlope: 1
+              inSlope: 0
               outSlope: 1
               tangentMode: 0
             - serializedVersion: 2
               time: 1
               value: 1
               inSlope: 1
-              outSlope: 1
+              outSlope: 0
               tangentMode: 0
             m_PreInfinity: 2
             m_PostInfinity: 2
-            m_RotationOrder: 4
+            m_RotationOrder: 0
           m_Loop: 0
           m_ZeroValue: 0
           m_Range: 1
@@ -236,7 +236,7 @@ MonoBehaviour:
             m_Curve: []
             m_PreInfinity: 2
             m_PostInfinity: 2
-            m_RotationOrder: 4
+            m_RotationOrder: 0
           m_Loop: 1
           m_ZeroValue: 0.5
           m_Range: 1
@@ -246,7 +246,7 @@ MonoBehaviour:
             m_Curve: []
             m_PreInfinity: 2
             m_PostInfinity: 2
-            m_RotationOrder: 4
+            m_RotationOrder: 0
           m_Loop: 1
           m_ZeroValue: 0.5
           m_Range: 1
@@ -256,7 +256,7 @@ MonoBehaviour:
             m_Curve: []
             m_PreInfinity: 2
             m_PostInfinity: 2
-            m_RotationOrder: 4
+            m_RotationOrder: 0
           m_Loop: 0
           m_ZeroValue: 0.5
           m_Range: 1
@@ -266,15 +266,15 @@ MonoBehaviour:
             m_Curve: []
             m_PreInfinity: 2
             m_PostInfinity: 2
-            m_RotationOrder: 4
+            m_RotationOrder: 0
           m_Loop: 0
           m_ZeroValue: 0.5
           m_Range: 1
-        e_CurrentEditingCurve: 0
+        e_CurrentEditingCurve: 3
         e_CurveY: 1
-        e_CurveR: 0
-        e_CurveG: 0
-        e_CurveB: 0
+        e_CurveR: 1
+        e_CurveG: 1
+        e_CurveB: 1
   userLut:
     m_Enabled: 0
     m_Settings:
@@ -293,12 +293,12 @@ MonoBehaviour:
       size: 3
       luminanceContribution: 0.76
   vignette:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       mode: 0
       color: {r: 0, g: 0, b: 0, a: 1}
       center: {x: 0.5, y: 0.5}
-      intensity: 0.582
+      intensity: 0.417
       smoothness: 1
       roundness: 0.876
       mask: {fileID: 0}

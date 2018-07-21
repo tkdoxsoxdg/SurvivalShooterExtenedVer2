@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.VR;
 
 public class CameraFllow : MonoBehaviour{
 
     public Transform target;
-    public float smoothing = 5f; //係数（カメラの位置に関連→始点終点間） 
+    public float smoothing = 5f; //係数（カメラの位置に関連→始点終点間）
 
     Vector3 offset;
 
