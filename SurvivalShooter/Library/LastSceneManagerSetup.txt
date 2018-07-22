@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/SurvivalShooter01.unity
+- path: "D:/IFK_\u9AD8\u7530\u4F51\u6A39/Tank_repository_result/Tank/Assets/Tank.unity"
   isLoaded: 1
   isActive: 1
